@@ -1,0 +1,171 @@
+body {
+    background-color: rgb(111, 110, 115);
+}
+
+.game-name {
+    display: flex;
+    justify-content: center;
+    /* height: 150px; */
+}
+
+.game-name h1 {
+    font-size: 21pt;
+    color: white;
+    /* margin-left: 30px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding-top: 10px;
+    /* width: 40%; */
+
+}
+
+.gn-btn {
+    /* float: right; */
+    margin-left: 1200px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 10%;
+    font-size: 14pt;
+    border-radius: 15px;
+    transition: all .5s ease-in;
+    font-weight: bold;
+}
+
+.gn-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+img {
+    mix-blend-mode: color-burn;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    border-image: fill;
+}
+
+.game-images {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(177, 183, 183);
+}
+
+.computer-image,
+.player-image {
+    width: 75%;
+}
+
+.shakescomputer {
+    animation: shakes 0.8s linear;
+}
+
+.shakesplayer {
+    animation: shakes 0.8s linear;
+
+}
+
+.game-score {
+    color: white;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    /* justify-content: space-around; */
+}
+
+.game-score p {
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.computer-score {
+    margin: 20px;
+}
+
+.player-score {
+    margin: 20px;
+}
+
+.tose-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tose-button button {
+    margin: 0px 10px 10px 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    transform: 0.2s all linear;
+    font-size: 14pt;
+    font-weight: bold;
+
+}
+
+.tose-button button:hover {
+    color: black;
+    background-color: white;
+
+}
+
+.message {
+    color: black;
+}
+
+@keyframes shakes {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@media screen and (max-width: 960px){
+    .gn-btn{
+        margin: 0;
+        width:22%;
+    }
+    .again-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    img {
+        mix-blend-mode: color-burn;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        border-image: fill;
+        height: 200px;
+        width: 60%;
+    }
+    .game-score{
+        font-size: 14pt;
+    }
+    .game-score p {
+        font-size: 16pt;
+    }
+    .game-name{
+        padding-top: 50px;
+    }
+
+}

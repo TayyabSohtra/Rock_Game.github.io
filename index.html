@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Game</title>
+  <link href="asset/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <div class = "game-box">
+        <div class = "game-name">
+            <h1>CHOOSE AN OPTION</h1>
+        </div>
+        <div class="again-btn">
+            <button class="gn-btn">Again!</button>
+        </div>
+        <div class =  "game-images">
+            <div class = "computer-image">
+                <img id="com-img" class="com-img" src="asset/images/Rock.png">
+            </div>
+            <div class = "player-image">
+                <img id="p-img" class="p-img" src="asset/images/Player_Rock.png" alt="">
+            </div>
+        </div>
+        <div class = "game-score">
+            COMPUTER<span class="computer-score">0</span>/<span class="player-score">0</span>PLAYER
+            <p class="message">Playing Game...</p>
+        </div>
+    </div>
+    <div class="tose-button">
+        <button class="btn">Rock</button>
+        <button class="btn1">Paper</button>
+        <button class="btn2">Scissor</button>
+    </div>
+    <script src="javascript/main.js">
+        // const computer=document.querySelector(".computer-image");
+        // // console.log(computer.img)
+        // const player=document.querySelector(".player-image");
+        // const computerscore=document.querySelector(".computer-score");
+        // const playerscore=document.querySelector(".player-score");
+        // const tosebutton=document.querySelectorAll(".tose-button");
+        // // tosebutton.forEach((tose)=>{
+        // //     tose.addEventListener("click",() => {
+                
+        // //         setTimeout(()=>{
+                    
+        // //         },900);
+        // //     })
+        // // })
+        // tosebutton.forEach((tose)=>{
+        //     // console.log(tose)
+        //     tose.addEventListener("click",() => {
+        //         player.classList.add("shakesplayer");
+        //         computer.classList.add("shakescomputer");
+        //         setTimeout(()=>{
+        //             player.classList.remove("shakesplayer");
+        //             computer.classList.remove("shakescomputer");
+        //             player.src =  "asset/images/Player_"+tose.innerHTML + ".png";
+        //             // console.log("asset/images/"+tose.innerHTML+".png")    
+        //             const choice=["Rock", "Paper", "Scissor"];
+        //             let arrayno=Math.floor(Math.random()*3);
+        //             let computerchoice=choice[arrayno]
+        //             // console.log(computerchoice)
+        //             computer.src="asset/images/"+computerchoice+".png";
+        //             // console.log("asset/images/"+computerchoice+".png")    
+        //         },900);
+        //     })
+        // })
+    </script>
+        
+        
+        <!--
+            This script places a badge on your repl's full-browser view back to your repl's cover
+            page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+            teal, blue, blurple, magenta, pink!
+  -->
+  <script src="asset/javascript/game.js" theme="dark" position="bottom-right"></script>
+
+</body>
+
+
+</html>
